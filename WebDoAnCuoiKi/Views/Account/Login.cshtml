@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<div class="agile-login">
+    <h1>Hệ Thống Linh Kiện Máy Tính Lớn Nhất Khu Vực Miền Nam</h1>
+    <div class="wrapper">
+        <h2>Sign In</h2>
+        <div class="w3ls-form">
+            <form action="Verify" method="post">
+                <label>Username</label>
+                <input type="text" name="Name" placeholder="Username" required />
+                <label>Password</label>
+                <input type="text" name="Password" placeholder="Password" required />
+                <a href="#" class="pass">Forgot Password ?</a>
+                <input type="submit" value="Log In" />
+            </form>
+        </div>
+
+        <div class="agile-icons">
+            <a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-pinterest-p"></span></a>
+        </div>
+    </div>
+    <br>
+    <div class="copyright">
+        <p>© 2020 VietNam Login. All rights reserved | Design by <a href="www.phongvu.com">W3layouts</a></p>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WebsiteQLSP" Class="ROGdataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-K3FKG32\MSSQLSERVER2;Initial Catalog=WebsiteQLSP;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WebsiteQLSPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ROGCatalog" Member="ROGCatalogs">
+    <Type Name="ROGCatalog">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CatalogCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CatalogName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="ROGCatalog_ROGProduct" Member="ROGProducts" ThisKey="id" OtherKey="CatalogId" Type="ROGProduct" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ROGProduct" Member="ROGProducts">
+    <Type Name="ROGProduct">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CatalogId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="ROGCatalog_ROGProduct" Member="ROGCatalog" ThisKey="CatalogId" OtherKey="id" Type="ROGCatalog" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

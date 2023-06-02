@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ROGdata">
+  <DataContextMoniker Name="/ROGdataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="763f8077-a84a-4ae2-83ce-27c0d22ed544" absoluteBounds="4.125, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ROGdataDataContext/ROGCatalog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2784ce08-b84d-4d5e-bb66-466427a873fc" absoluteBounds="4.14, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf43c854-00e5-46f2-9baa-7bf84c589765" absoluteBounds="0.75, 1.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ROGdataDataContext/ROGProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="012e65a1-4c49-4c66-a558-c414ee740f9d" absoluteBounds="0.76500000000000012, 1.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 1.94314697265625); (2.75 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ROGdataDataContext/ROGCatalog/ROGCatalog_ROGProduct" />
+      <nodes>
+        <classShapeMoniker Id="763f8077-a84a-4ae2-83ce-27c0d22ed544" />
+        <classShapeMoniker Id="bf43c854-00e5-46f2-9baa-7bf84c589765" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
